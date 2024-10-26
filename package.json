@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node-sass sass/main.scss style.css -w"
+    "compile:sass": "node-sass sass/main.scss style.css -w"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "sass": "^1.80.4"
+  "dependencies": {
+    "node-sass": "^9.0.0"
   }
 }

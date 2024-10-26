@@ -1,0 +1,48 @@
+.hero__navbar {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+
+  &--logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(254, 77, 1);
+  }
+
+  &--links {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style: none;
+      width: 500px;
+
+      li {
+        line-height: 40px;
+        margin: 0 15px;
+        a {
+          text-decoration: none;
+          font-size: 20px;
+          color: black;
+        }
+      }
+    }
+  }
+
+  &--search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    [type] {
+      padding: 3px;
+      border: none;
+      outline: none;
+    }
+
+    .btn {
+      background-color: antiquewhite;
+      padding: 3px;
+    }
+  }
+}
