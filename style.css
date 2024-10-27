@@ -1,6 +1,69 @@
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  box-sizing: border-box; }
+
+form h4,
+p {
+  text-align: center;
+  margin-top: 15px; }
+
+form a,
+form,
+span {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 18px; }
+
+form a {
+  text-decoration: none;
+  color: tomato; }
+
+.div__hero--content {
+  color: white;
+  width: 40%;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  transform: translateY(-50%); }
+
+.hero__form {
+  height: 400px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.151);
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  border-radius: 5px; }
+  .hero__form form {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    color: white; }
+    .hero__form form h3 {
+      text-align: center;
+      margin: 15px;
+      font-size: 28px; }
+    .hero__form form [type] {
+      display: block;
+      width: 100%;
+      margin: 15px 0;
+      height: 30px; }
+
+.btn-primary {
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  background-color: #fe4d01;
+  width: 100%;
+  margin: 15px 0;
+  height: 30px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px; }
 
 .hero__navbar {
   display: flex;
@@ -15,27 +78,45 @@
     align-items: center;
     justify-content: space-between;
     list-style: none;
-    width: 500px; }
+    width: 500px;
+    height: 100%; }
     .hero__navbar--links ul li {
       line-height: 40px;
       margin: 0 15px; }
       .hero__navbar--links ul li a {
         text-decoration: none;
         font-size: 20px;
-        color: black; }
+        color: white; }
   .hero__navbar--search {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    padding: 5px; }
     .hero__navbar--search [type] {
-      padding: 3px;
       border: none;
-      outline: none; }
+      outline: 1px solid tomato;
+      height: 30px;
+      padding: 5px;
+      font-size: 18px;
+      background-color: transparent;
+      color: white;
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px; }
     .hero__navbar--search .btn {
-      background-color: antiquewhite;
-      padding: 3px; }
+      line-height: 30px;
+      background-color: #fe4d01;
+      height: 31px;
+      padding: 0 10px;
+      text-decoration: none;
+      font-size: 18px;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+      color: white; }
 
 .hero {
   height: 100vh;
   width: 100%;
-  background-image: url("../../image/1.jpg"); }
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.777), rgba(0, 0, 0, 0.777)), url("1.jpg");
+  background-size: cover;
+  background-position: top; }

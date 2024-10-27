@@ -16,6 +16,7 @@
       justify-content: space-between;
       list-style: none;
       width: 500px;
+      height: 100%;
 
       li {
         line-height: 40px;
@@ -23,7 +24,7 @@
         a {
           text-decoration: none;
           font-size: 20px;
-          color: black;
+          color: rgb(255, 255, 255);
         }
       }
     }
@@ -33,16 +34,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 
     [type] {
-      padding: 3px;
       border: none;
-      outline: none;
+      outline: 1px solid tomato;
+      height: 30px;
+      padding: 5px;
+      font-size: 18px;
+      background-color: transparent;
+      color: white;
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
     }
 
     .btn {
-      background-color: antiquewhite;
-      padding: 3px;
+      line-height: 30px;
+      background-color: rgb(254, 77, 1);
+      height: 31px;
+      padding: 0 10px;
+      text-decoration: none;
+      font-size: 18px;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+      color: white;
     }
   }
 }
