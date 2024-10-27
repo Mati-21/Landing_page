@@ -2,11 +2,14 @@
   display: flex;
   justify-content: space-around;
   height: 50px;
+  padding: 10px;
 
   &--logo {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
     color: rgb(254, 77, 1);
+    line-height: 30px;
+    text-align: center;
   }
 
   &--links {
@@ -25,6 +28,14 @@
           text-decoration: none;
           font-size: 20px;
           color: rgb(255, 255, 255);
+          display: inline-block;
+          transition: transform 0.9s ease, color 0.3s ease;
+          &:hover {
+            color: rgb(254, 77, 1);
+            cursor: pointer;
+            transform: scale(1.4);
+            padding-bottom: 2px;
+          }
         }
       }
     }

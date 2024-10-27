@@ -1,7 +1,7 @@
 .hero__form {
-  height: 400px;
-  width: 300px;
-  background-color: rgba(255, 255, 255, 0.151);
+  height: 450px;
+  width: 350px;
+  background-color: rgba(0, 0, 0, 0.646);
   position: absolute;
   top: 50%;
   right: 5%;
@@ -18,6 +18,11 @@
       text-align: center;
       margin: 15px;
       font-size: 28px;
+      background-color: white;
+      color: $main-color;
+      padding: 8px;
+      border-radius: 8px;
+      margin-bottom: 40px;
     }
 
     [type] {
@@ -25,6 +30,17 @@
       width: 100%;
       margin: 15px 0;
       height: 30px;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      color: white;
+      border-bottom: 1px solid $main-color;
+      padding-bottom: 5px;
+      font-size: 16px;
+    }
+
+    .form__option {
+      text-align: center;
     }
   }
 }

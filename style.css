@@ -8,13 +8,6 @@ p {
   text-align: center;
   margin-top: 15px; }
 
-form a,
-form,
-span {
-  text-align: center;
-  margin-bottom: 15px;
-  font-size: 18px; }
-
 form a {
   text-decoration: none;
   color: tomato; }
@@ -23,14 +16,56 @@ form a {
   color: white;
   width: 40%;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 5%;
   transform: translateY(-50%); }
+  .div__hero--content h1 {
+    font-size: 45px;
+    letter-spacing: 6.5px; }
+  .div__hero--content p {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 18px; }
+  .div__hero--content span {
+    display: block;
+    color: #fe4d01; }
+  .div__hero--content a {
+    background-color: #fe4d01;
+    text-decoration: none;
+    width: 150px;
+    text-align: center;
+    color: black;
+    padding: 10px 20px;
+    margin-top: 15px;
+    display: inline-block;
+    transition: all 0.4s ease-in-out;
+    border-radius: 4px; }
+    .div__hero--content a:hover {
+      color: white;
+      cursor: pointer;
+      background-color: black; }
+  .div__hero--content h4 {
+    font-size: 28px; }
+
+.hero__form--icons {
+  margin-top: 15px;
+  height: 35px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .hero__form--icons .fa-brands {
+    transition: all 0.5s ease; }
+  .hero__form--icons .fa-brands:hover {
+    color: #fe4d01;
+    cursor: pointer;
+    transform: scale(1.4);
+    backface-visibility: hidden; }
 
 .hero__form {
-  height: 400px;
-  width: 300px;
-  background-color: rgba(255, 255, 255, 0.151);
+  height: 450px;
+  width: 350px;
+  background-color: rgba(0, 0, 0, 0.646);
   position: absolute;
   top: 50%;
   right: 5%;
@@ -45,12 +80,26 @@ form a {
     .hero__form form h3 {
       text-align: center;
       margin: 15px;
-      font-size: 28px; }
+      font-size: 28px;
+      background-color: white;
+      color: #fe4d01;
+      padding: 8px;
+      border-radius: 8px;
+      margin-bottom: 40px; }
     .hero__form form [type] {
       display: block;
       width: 100%;
       margin: 15px 0;
-      height: 30px; }
+      height: 30px;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      color: white;
+      border-bottom: 1px solid #fe4d01;
+      padding-bottom: 5px;
+      font-size: 16px; }
+    .hero__form form .form__option {
+      text-align: center; }
 
 .btn-primary {
   display: inline-block;
@@ -68,11 +117,14 @@ form a {
 .hero__navbar {
   display: flex;
   justify-content: space-around;
-  height: 50px; }
+  height: 50px;
+  padding: 10px; }
   .hero__navbar--logo {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
-    color: #fe4d01; }
+    color: #fe4d01;
+    line-height: 30px;
+    text-align: center; }
   .hero__navbar--links ul {
     display: flex;
     align-items: center;
@@ -86,7 +138,14 @@ form a {
       .hero__navbar--links ul li a {
         text-decoration: none;
         font-size: 20px;
-        color: white; }
+        color: white;
+        display: inline-block;
+        transition: transform 0.9s ease, color 0.3s ease; }
+        .hero__navbar--links ul li a:hover {
+          color: #fe4d01;
+          cursor: pointer;
+          transform: scale(1.4);
+          padding-bottom: 2px; }
   .hero__navbar--search {
     display: flex;
     justify-content: center;
@@ -117,6 +176,6 @@ form a {
   height: 100vh;
   width: 100%;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.777), rgba(0, 0, 0, 0.777)), url("1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.543), rgba(0, 0, 0, 0.589)), url("1.jpg");
   background-size: cover;
   background-position: top; }

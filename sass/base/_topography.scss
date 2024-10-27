@@ -3,13 +3,6 @@ p {
   text-align: center;
   margin-top: 15px;
 }
-form a,
-form,
-span {
-  text-align: center;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
 
 form a {
   text-decoration: none;
@@ -20,7 +13,62 @@ form a {
   color: white;
   width: 40%;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 5%;
   transform: translateY(-50%);
+
+  h1 {
+    font-size: 45px;
+    letter-spacing: 6.5px;
+  }
+
+  p {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  span {
+    display: block;
+    color: $main-color;
+  }
+  a {
+    background-color: $main-color;
+    text-decoration: none;
+    width: 150px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    margin-top: 15px;
+    display: inline-block;
+    transition: all 0.4s ease-in-out;
+    border-radius: 4px;
+    &:hover {
+      color: white;
+      cursor: pointer;
+      background-color: black;
+    }
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+}
+
+.hero__form--icons {
+  margin-top: 15px;
+  height: 35px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .fa-brands {
+    transition: all 0.5s ease;
+  }
+
+  .fa-brands:hover {
+    color: rgb(254, 77, 1);
+    cursor: pointer;
+    transform: scale(1.4);
+    backface-visibility: hidden;
+  }
 }
